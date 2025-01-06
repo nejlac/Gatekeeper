@@ -1,0 +1,64 @@
+/* Reset osnovnog stila */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Pozadina sa slikom */
+  .background {
+    background: url('pozadina.webp') no-repeat center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  
+  /* Control panel */
+  .control-panel {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    margin-bottom: 270px;
+  }
+  
+  /* Dugme za kontrolu rampe */
+  button {
+    background-color: #ff8c42;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #ff6a00;
+  }
+
+  button:disabled {
+    background-color: #d6d6d6;
+    color: #999;
+    cursor: not-allowed;
+    box-shadow: none;
+    border: none;
+  }
+  
+  /* Tekst statusa i udaljenosti */
+  #status {
+    font-weight: bold;
+    color: #ff4500;
+  }
+  
+  #distance {
+    font-weight: bold;
+    color: #2a9d8f;
+  }
+  
